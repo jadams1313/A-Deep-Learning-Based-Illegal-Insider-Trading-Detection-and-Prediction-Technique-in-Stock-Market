@@ -59,7 +59,7 @@ if __name__=='__main__':
 	print('> Loading data... ')
 
 	fname = 'input/' + company + '_' + dataset + '.csv'
-	X_train, y_train, X_test, y_test = lstm.load_data(fname, seq_len, True)
+	X_train, y_train, X_test, y_test, X_Valid, y_valid = lstm.load_data(fname, seq_len, True)
 
 	print('> Data Loaded. Compiling...')
 
